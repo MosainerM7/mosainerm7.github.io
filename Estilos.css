@@ -1,0 +1,385 @@
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Nastaliq+Urdu&family=Roboto:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Nastaliq Urdu', serif;
+
+}
+
+body {
+    background-color: rgb(205, 234, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container 
+{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: rgb(255, 249, 242);
+  display: grid;
+  margin: 50px;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+  
+
+.container .left-side 
+{
+    position: relative;
+    background: rgb(98, 170, 238);
+    padding: 40px;
+}
+
+.Profile-txt
+{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 20px;
+   border-bottom: 1px solid rgba(0,0,0,2);
+
+}
+
+.Profile-txt .img8x
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+     
+}
+
+
+.Profile-txt .img8x img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.Profile-txt h2
+{
+    
+    color:aliceblue;
+    font-size: 1.5em;
+    margin-top: 15px;   
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.Profile-txt h2 span
+{
+    
+    font-size: 1em;
+    font-weight: 400;
+
+
+}
+
+
+.acordion
+{
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.8rem auto;
+    
+}
+
+.acordion-item {
+    background-color: rgb(144, 202, 255);
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25);
+}
+
+.acordion-item-header
+{
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+    min-height: 2rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.acordion-item-header::after
+{
+    
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    top: 0.10rem;
+    right: 0.5rem;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.acordion-item-header.active::after
+{
+    content: "\2212";
+}
+
+
+
+.acordion-item-body 
+{
+   max-height: 0;
+   overflow: hidden;
+   line-height: 1.5rem;
+   transition: max-height 0.2s ease-out;
+   border-image: linear-gradient(to right,#000000, transparent) 1;
+   
+}
+
+
+ .accordion-item-body-content .txt span {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.acordion-item-header.active::after + .acordion-item-body {
+      max-height: 500px;
+ }
+
+
+
+.title
+{
+
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+.acordion .icon
+{
+    
+    display: inline-block;
+    font-weight: 300;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.icon 
+{
+
+    padding: 5px 5px 5px 5px;
+}
+
+.acordion h5
+{
+    padding: 5px;
+    color: rgb(226, 244, 255);
+    font-weight: 500;
+    font-size: 1.3em;
+
+}
+
+.acordion h4 :nth-child(2)
+{
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.acordion h4
+{
+    padding: 5px 5px;
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+
+.InfoContactLanguage ul li 
+{
+   
+    position: relative;
+    list-style: none;
+    width: 100%;
+    margin: 10px 0;
+    flex-direction: column;
+   
+
+}
+
+.InfoContactLanguage .txt 
+{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+
+}
+
+.InfoContactLanguage .percent
+{
+    
+ position: relative;
+ width: 100%;
+ height: 6px;
+ background-color: rgb(14, 16, 17);
+ display: block;
+ margin-top: 5px;
+}
+
+.InfoContactLanguage .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(215, 217, 247);
+
+}
+
+
+.container .right-side 
+{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.about
+{
+    margin-bottom: 50px;
+}
+
+
+.about
+{
+    margin-bottom: 0;
+}
+
+.title2
+{
+    font-weight: 600;
+    font-size: 2em;
+    color:  rgb(98, 170, 238);
+    
+}
+
+p {
+    font: 18px;
+    font-family: 'Poppins', sans-serif;
+    color:#333;
+    font-size: 2em;
+}
+
+.about-me ul
+{
+    position: relative;    
+}
+
+.about-me ul li     
+{
+    font: 18px;
+    font-family: 'Poppins', sans-serif;
+    left: 1.2rem;   
+    position: relative;
+    width: 100%; 
+   
+
+}
+
+.about-me ul li .txt span
+{
+    font-family: 'Poppins', sans-serif;
+    font: 18px;
+
+}
+.about-me .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+
+}
+
+.about-me .box .year-company
+{
+    min-width: 150px;
+}
+
+.about-me .box .year-company h5
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+}
+
+.about-me .box .txt h4
+{
+
+    
+    text-transform: uppercase;
+    color: rgb(98, 170, 238);
+    font-size: 16px;
+}
+
+.about-me p
+{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.about-me .txt span
+{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+@media (max-width: 850px)
+{
+   .container
+   {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+
+   }   
+}
+
+@media (max-width: 600px)
+{
+    .about-me .box
+    {
+        flex-direction: column;
+        
+    }
+    .about-me .year-company
+    {
+        margin-bottom: 5px;
+        
+    }
+   
+}
+
